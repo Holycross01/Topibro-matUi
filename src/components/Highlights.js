@@ -79,7 +79,7 @@ export default function Highlights() {
           }}
         >
           <Typography component="h2" variant="h4" gutterBottom>
-           Let's build your Next Website and Mobile App
+           Let us build your Next Website and Mobile App
           </Typography>
           <Typography variant="body1" sx={{ color: 'grey.400' }}>
             Explore why our product stands out: adaptability, durability,
@@ -87,35 +87,36 @@ export default function Highlights() {
             precision in every detail.
           </Typography>
         </Box>
-        <Grid container spacing={2}>
-          {items.map((item, index) => (
-            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
-              <Stack
-                direction="column"
-                component={Card}
-                spacing={1}
-                useFlexGap
-                sx={{
-                  color: 'inherit',
-                  p: 3,
-                  height: '100%',
-                  borderColor: 'hsla(220, 25%, 25%, 0.3)',
-                  backgroundColor: 'grey.800',
-                }}
-              >
-                <Box sx={{ opacity: '50%' }}>{item.icon}</Box>
-                <div>
-                  <Typography gutterBottom sx={{ fontWeight: 'medium' }}>
-                    {item.title}
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: 'grey.400' }}>
-                    {item.description}
-                  </Typography>
-                </div>
-              </Stack>
-            </Grid>
-          ))}
-        </Grid>
+<Grid container spacing={2}>
+  {items.map((item, index) => (
+    <Grid item xs={12} sm={6} md={4} key={index}>
+      <Stack
+        direction="column"
+        component={Card}
+        spacing={1}
+        useFlexGap
+        sx={{
+          color: 'inherit',
+          p: 3,
+          height: '100%',
+          borderColor: 'hsla(220, 25%, 25%, 0.3)',
+          backgroundColor: 'grey.800',
+        }}
+      >
+        <Box sx={{ opacity: '50%' }}>{item.icon}</Box>
+        <div>
+          <Typography gutterBottom sx={{ fontWeight: 'medium' }}>
+            {item.title}
+          </Typography>
+          <Typography variant="body2" sx={{ color: 'grey.400' }}>
+            {item.description}
+          </Typography>
+        </div>
+      </Stack>
+    </Grid>
+  ))}
+</Grid>
+
       </Container>
     </Box>
   );

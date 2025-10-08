@@ -1,3 +1,4 @@
+
 // app/page.jsx
 // import Container from "@mui/material/Container";
 // import Typography from "@mui/material/Typography";
@@ -11,7 +12,8 @@
 import { Container } from "@mui/material";
 import Pagecontent from "../components/Pagecontent";
 import Productfeatures from "../components/Productfeatures"
-import Highlights from "@/components/Highlights";
+// import Highlights from "@/components/Highlights";
+import HighlightPrice from "@/components/Highlights";
 
 
 
@@ -20,8 +22,8 @@ export default function Page() {
   <Container maxWidth="lg">
       <Pagecontent/>
       <Productfeatures/>
-      <Highlights/>
-      
+      <HighlightPrice/>
+
   </Container>
   )
     

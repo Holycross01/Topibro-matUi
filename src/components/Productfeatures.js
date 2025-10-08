@@ -135,7 +135,7 @@ MobileLayout.propTypes = {
 
 export { MobileLayout };
 
-export default function Features() {
+export default function Productfeatures() {
   const [selectedItemIndex, setSelectedItemIndex] = React.useState(0);
 
   const handleItemClick = (index) => {
